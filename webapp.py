@@ -9,9 +9,5 @@ app.debug = False #Change this to False for production
 def home():
     return render_template('home.html')
 
-'''@app.route('/')
-def new_content():
-    return render_template('home.html')'''
-
 if __name__ == '__main__':
     app.run()
