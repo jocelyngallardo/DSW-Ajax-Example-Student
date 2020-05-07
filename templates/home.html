@@ -11,7 +11,9 @@
    
      <script>
        $(document).ready(function(){
-          //$("#div1").load("demo_test.txt #p1");
+         $("#update").click(function(){
+           $("#div1").load("home.html #p2");
+         });
       });
      </script>
   </head>
@@ -20,9 +22,10 @@
     <div id="div1">
       <h2>Div 1</h2>
       <p>The contents of this div will be replaced with new content form the server.</p>
+      <p id="p2">{{newContent}}</p>
     </div>
 
-    <button>Update div 1</button>
+    <button id="update">Update div 1</button>
    
    <div id="div2">
       <h2>This text isn't updated.</h2>
