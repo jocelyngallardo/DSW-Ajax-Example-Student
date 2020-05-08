@@ -10,7 +10,7 @@ def home():
     return render_template('home.html')
 @app.route('/content')
 def content():
-    return render_template('content.html')
+    return Markup("<p>This is the new content!</p>")
 
 if __name__ == '__main__':
     app.run()
